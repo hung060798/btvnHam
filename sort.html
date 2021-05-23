@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a =['chung','son','hung','ky','tam']
+  function sort() {
+      let doi;
+      for( let i = 0; i< a.length;  i++) {
+          if(a[i]>a[i+1]) {
+              doi = a[i];
+              a[i] = a[i+1];
+              a[i+1] = doi;
+          }
+      }
+      return a;
+  }
+  alert(sort())
+</script>
+</body>
+</html>

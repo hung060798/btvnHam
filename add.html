@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = [ 1,2,3,4,5]
+  function add(arr,index){
+      let b= [...a]
+    for (let i=0; i<=a.length; i++){
+        if(i==index){
+            b[i]= arr;
+        } else if(i>index){
+        b[(i)]= a[i-1]
+        }else b[i]=a[i]
+
+    }
+    // for (let j=index; j<=a.length;j++){
+    //     b[j+1]=a[j]
+    // }
+    return b;
+  }
+ alert(add(6,2))
+</script>
+</body>
+</html>
